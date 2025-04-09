@@ -1,2 +1,129 @@
-/* Add your styles for the page here */
+/* General styles */
+body {
+    font-family: 'Libre Baskerville', Arial, sans-serif; /* Updated font stack */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+    background-color: #003366;
+    color: #fff7e1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    background-color: transparent; /* Removes any white background */
+    height: 30px;
+    margin-right: 10px;
+}
+
+.learn-more-btn {
+    background-color: #ffc907;
+    color: #1a1a1a;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 20px; /* Ensure the header button also has rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.learn-more-btn:hover {
+    background-color: #ffe066; /* 50% lighter shade of the original button color */
+}
+
+/* Main content styles */
+.main-content {
+    position: relative; /* Allows positioning of child elements */
+    height: 400px; /* Match the hero image height */
+}
+
+.text-content {
+    position: absolute; /* Position the box over the hero image */
+    top: calc(55% + 60px); /* Adjust the top position to account for the navbar height (60px) */
+    right: 5%; /* Position the box on the right side with some margin */
+    width: 30%; /* Restrict the width of the box */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    text-align: center; /* Center-align the text inside the box */
+    color: #fff7e1; /* Light color for text */
+    padding: 20px; /* Add padding inside the box */
+    padding-bottom: 50px; /* Add space at the bottom of the text content box */
+    border-radius: 10px; /* Rounded corners for the box */
+    background-color: rgba(0, 51, 102, 0.4); /* Add a semi-transparent background color */
+}
+
+.text-content h1 {
+    font-size: 3rem; /* Larger font size for the heading */
+    margin-bottom: 30px; /* Add spacing below the heading */
+    margin-top: 30px;
+}
+
+.text-content p {
+    font-size: 1.3rem; /* Slightly larger font size for the paragraph */
+    margin-bottom: 50px; /* Add spacing below the paragraph */
+    line-height: 1.6; /* Improve readability */
+}
+
+.cta-btn {
+    background-color: #77a8bb; /* Update button color */
+    color: #fff7e1; /* White text for the button */
+    padding: 20px 30px; /* Increase padding for a larger button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 20px; /* Increase the rounding for the button corners */
+    font-size: 1.2rem; /* Increase font size for better visibility */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-top: 30px; /* Add more space above the button */
+    margin-bottom: 50px; /* Add more space below the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-btn:hover {
+    background-color: #a3c8d6; /* 50% lighter shade of the original button color */
+}
+
+/* Hero image styles */
+.image-content {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('Madagascar_2019_CG-2679.jpg'); /* Set the hero image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.image-content img {
+    display: none; /* Hide the original <img> tag */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .text-content {
+        width: 80%; /* Increase the width for better readability on smaller screens */
+        right: 10%; /* Adjust the position to center the box */
+        padding: 15px; /* Reduce padding for smaller screens */
+        border-radius: 10px; /* Keep rounded corners for consistency */
+    }
+
+    .text-content h1 {
+        font-size: 2rem; /* Reduce heading size for smaller screens */
+    }
+
+    .text-content p {
+        font-size: 1.1rem; /* Slightly reduce paragraph font size */
+    }
+
+    .cta-btn {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 0.9rem; /* Slightly reduce button font size */
+    }
+}
 
